@@ -139,10 +139,64 @@ header {
     color: hsl(0, 0%, 100%);
 }
 
+.dropdown {
+    display: block;
+    flex-direction: row;
+    background: #f4f4f4;
+    color: #000;
+    position: absolute;
+}
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-space {
     display: flex;
     flex-direction: row;
 
+}
+
+#nav-bar .dropdown ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+    padding: .7rem;
+
+}
+
+#nav-bar .dropdown ul li {
+    padding-left: 0;
+    text-align: center;
+
+}
+
+#nav-bar .dropdown ul li a {
+    color: #232222cf;
+}
+
+.drop-one {
+    display: none;
+}
+
+.product:hover .drop-one {
+    display: block;
+}
+.drop-two {
+    display: none;
+}
+
+.company:hover .drop-two {
+    display: block;
+}
+.drop-three {
+    display: none;
+}
+
+.connect:hover .drop-three {
+    display: block;
 }
 
 .login {
@@ -268,6 +322,10 @@ html, body {
     text-align: center;
     padding-top: 2rem;
 }
+
+/* .dropdown{
+    
+} */
 
 .login{
     display: none;
